@@ -11,6 +11,9 @@ p {
   font-weight: normal;
   font-size: 160%;
 }
-.menu{
+.menu__item {
 	color: green;
+}
+.main-content__button {
+	color: #708090;
 }
