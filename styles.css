@@ -1,19 +1,41 @@
 h1 {
-  font-family: "Marck Script", sans-serif;
-  color: red;
+  font-family: 'PT Serif', serif;
+  color: #000000;
   font-weight: bold;
-  font-size: 250%;
+  font-size: 50px;
+  line-height: 66,25px;
 }
-
 p {
-  font-family: "Open Sans Condensed", sans-serif;
-  color: #696969;
+  font-family: 'Roboto', serif;
+  color: #000000;
   font-weight: normal;
-  font-size: 160%;
+  font-size: 18px;
+  line-height: 21,09px;
+}
+.wrapper {
+	border: dashed 1px red;
+	width: 80%;
+	margin: auto;
+}
+.logo,.menu {
+  display: inline-block;
+	border: dashed 1px red;
+}
+.header {
+	display: flex;
+  justify-content: space-between;
+}
+.logo {
+	padding: 40px 0;
+}
+.menu {
+	display: flex;
+	align-items: center;
 }
 .menu__item {
-	color: green;
+	padding: 0 13px;
+	border: dashed 1px red;
 }
-.main-content__button {
-	color: #708090;
+.menu__item:last-child {
+	padding-right: 0;
 }
