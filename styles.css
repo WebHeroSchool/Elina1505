@@ -77,7 +77,7 @@ p {
   margin-right: 0;
 }
 
-.menu__item_active::after {
+.menu__item_active:hover::after {
   display: block;
   content: "";
   width: 100%;
