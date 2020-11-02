@@ -106,7 +106,7 @@ p {
   width: 100%;
 }
 
-.menu__item::after {
+.menu__item:after {
   position: absolute;
   left: 0;
   display: block;
