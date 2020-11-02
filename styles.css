@@ -90,7 +90,7 @@ p {
   opacity: 0.5;
 }
 
-.menu__item:hover:after {
+.menu__item:hover::after {
   position: absolute;
   left: 0;
   display: block;
@@ -100,13 +100,13 @@ p {
   background: #0056ec;
 }
 
-.menu__item:hover:after,
-.menu__item_active:after {
+.menu__item:hover::after,
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
 
-.menu__item:after {
+.menu__item::after {
   position: absolute;
   left: 0;
   display: block;
