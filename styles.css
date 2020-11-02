@@ -61,7 +61,8 @@ p {
 .menu {
   display: flex;
   align-items: center;
-}
+  font: normal 14px/17px roboto, arial, helvetica, sans-serif;
+ }
 
 .menu__item {
   padding: 0 13px;
