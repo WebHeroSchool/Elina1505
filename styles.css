@@ -77,15 +77,6 @@ p {
   margin-right: 0;
 }
 
-.menu__item_active::after {
-  position: absolute;
-  display: block;
-  content: "";
-  width: 100%;
-  height: 3px;
-  background: #0056ec;
-}
-
 .menu__item:hover::after {
   position: absolute;
   left: 0;
@@ -116,4 +107,13 @@ p {
 .menu__item_active::after {
   opacity: 1;
   width: 100%;
+}
+
+.menu__item_active::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056ec;
 }
