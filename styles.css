@@ -77,7 +77,7 @@ p {
   margin-right: 0;
 }
 
-.menu__item_active:after {
+.menu__item_active::after {
   position: absolute;
   display: block;
   content: "";
@@ -96,7 +96,7 @@ p {
   background: #0056ec;
 }
 
-.menu__item:after {
+.menu__item::after {
   position: absolute;
   left: 0;
   display: block;
