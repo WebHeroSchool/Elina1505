@@ -113,7 +113,7 @@ p {
 }
 
 .menu__item:hover::after,
-.menu__item_active:after {
+.menu__item_active::after {
   opacity: 1;
   width: 100%;
 }
