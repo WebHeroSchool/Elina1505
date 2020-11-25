@@ -82,7 +82,7 @@
   position: relative;
   transition: opacity 0.5s;
   color: #000;
-  margin-right: 75px;
+  margin-right: 190px;
 }
 
 .menu__item1:hover::after,
@@ -120,7 +120,7 @@
 .main {
   padding: 85px 63% 241px 0;
   background: no-repeat top right url(img/mainimg.svg);
-  background-position: 91.5% 10%;
+  background-position: 80.3% 10%;
 }
 
 .main__title {
