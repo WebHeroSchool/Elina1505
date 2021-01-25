@@ -1,6 +1,6 @@
 .wrapper {
   width: 90%;
-  margin: 0 0 0 187px;
+  margin: 0 0 0 210px;
 }
 
 #checkbox_id {
@@ -25,8 +25,7 @@
 .logo {
   position: relative;
   left: 0;
-  padding: 32px 764px;
-  padding-left: 44.7px;
+  padding: 32px 764px 33px 44.7px;
   font: normal 24px/31.8px pt_serifbold, arial, helvetica, sans-serif;
 }
 
@@ -57,7 +56,7 @@
 .menu {
   display: flex;
   align-items: center;
-  font: normal 18px/23px roboto, arial, helvetica, sans-serif;
+  font: normal 14px/16.41px roboto, arial, helvetica, sans-serif;
   padding-top: 4px;
 }
 
@@ -88,7 +87,7 @@
   display: block;
   content: "";
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: #0056ec;
 }
 
@@ -109,9 +108,9 @@
 }
 
 .main__subtitle {
-  margin: 0 0 44px 0;
-  font: normal 21.8px/26px roboto, arial, helvetica, serif;
-  width: 74%;
+  margin: 0 0 40px 0;
+  font: normal 18px/21.09px roboto, arial, helvetica, serif;
+  width: 78%;
 }
 
 .main__title-text_hihglight {
@@ -123,7 +122,7 @@
   font: 18px/21px roboto, arial, helvetica, sans-serif;
   color: #fff;
   background: #0056ec;
-  padding: 15px 22px;
+  padding: 14px 29px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity 0.5s;
@@ -131,6 +130,113 @@
 
 .main__button:hover {
   opacity: 0.5;
+}
+
+@media (max-width: 1367px) {
+  .wrapper {
+    width: 100vw;
+    margin: 0 0px 0 122px;
+    padding: 0px 0px 0px 88px;
+  }
+
+  .logo {
+    left: 0px;
+    padding: 32px 0px 33px 45.7px;
+    font: normal 21px/31.8px pt_serifbold, arial, helvetica, sans-serif;
+  }
+
+  .logo__circle_color_dark-blue {
+    top: 46px;
+    left: 1px;
+  }
+
+  .logo__circle_color_blue {
+    left: 9px;
+    top: 54%;
+  }
+
+  .menu {
+    font: normal 14px/17px roboto, arial, helvetica, sans-serif;
+    padding: 6px 23px 0px 0px;
+  }
+
+  .menu__item {
+    margin-right: 26px;
+  }
+
+  .menu__item_active::after {
+    height: 2px;
+  }
+
+  .header {
+    margin-bottom: 6px;
+  }
+
+  .main {
+    padding: 100px 50% 130px 210px;
+    background: no-repeat top right url(img/frame1366.svg);
+    background-position: 75% 54%;
+  }
+
+  .main__title {
+    margin: 0 0 38px 0;
+    font: bold 50px/66.25px pt_serifbold, arial, helvetica, serif;
+  }
+
+  .main__subtitle {
+    margin: 0 0 42px 0;
+    font: normal 18px/21.09px roboto, arial, helvetica, serif;
+    width: 78%;
+  }
+
+  .main__button {
+    font: 14px/16.41px roboto, arial, helvetica, sans-serif;
+    padding: 14px 17px;
+  }
+
+}
+
+@media (max-width: 1025px) {
+  .wrapper {
+    margin: 0 0 0 37px;
+    width: 95%;
+  }
+
+  .header {
+    margin-bottom: 0px;
+  }
+
+  .logo {
+    padding: 31px 402px 39px 44.7px;
+    left: 0px;
+  }
+
+  .logo__circle_color_blue {
+    top: 54%;
+  }
+
+  .menu {
+    font: normal 14px/17.41px roboto, arial, helvetica, sans-serif;
+    padding-top: 0px;
+  }
+
+  .menu__item {
+    margin-right: 26px;
+  }
+
+  .menu__item_active::after {
+    height: 2px;
+  }
+
+  .main {
+    padding: 100px 50% 132px 38px;
+    background-position: 92.2% 54%;
+  }
+
+  .main__button {
+    padding: 14px 16px;
+  }
+  
 }
 
 @media (max-width: 768px) {
@@ -141,7 +247,7 @@
   }
 
   .header {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 
   .logo {
@@ -206,7 +312,6 @@
   #checkbox_id:checked ~ .menu {
     display: flex;
     height: 100vh;
-    justify-content: space-around;
     flex-direction: column;
     z-index: 2;
     width: 100%;
@@ -236,15 +341,16 @@
   .main {
     position: absolute;
     text-align: center;
-    padding: 72% 0 0;
+    padding: 69% 0px 0px;
     background-size: 77%;
     background-position: top center;
     z-index: 1;
+    margin: 0px 10px 0px 0px;
   }
 
   .main__title {
     margin-bottom: 33px;
-    margin-left: 5px;
+    margin-left: 7px;
     font: 30px/39px pt_serifbold, arial, helvetica, serif;
   }
 
@@ -257,21 +363,26 @@
 
   .main__button {
     font: 14px/16px roboto, arial, helvetica, sans-serif;
-    padding-left: 14px;
+    padding-left: 24px;
   }
 
   .menu__item {
     display: block;
-    padding: 12px 24px;
+    padding: 17px 24px;
     color: #333;
     font-family: roboto, arial, helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 500;
     text-decoration: none;
   }
 
+  #checkbox_id:checked ~ .menu {
+    padding: 147px 0px 0px 0px;
+  }
+
   #checkbox_id:checked ~ .menu > .menu__item {
-    padding: 0;
+    padding: 0px 19px 0px 0;
+    margin: 37px 0 0 0;
   }
 
   #checkbox_id:checked ~ .menu > .menu__item::after {
