@@ -250,9 +250,6 @@
     width: auto;
   }
 
-  .header {
-  }
-
   .logo {
     padding: 25px 0;
   }
@@ -314,12 +311,15 @@
 
   #checkbox_id:checked ~ .menu {
     display: flex;
-    height: 76vh;
+    justify-content: center;
     flex-direction: column;
     z-index: 2;
-    width: 80vw;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
     background: #fff;
+    bottom: 32px;
+    left: 6px;
   }
 
 /* анимация бургера */
@@ -380,7 +380,7 @@
   }
 
   #checkbox_id:checked ~ .menu {
-    padding: 147px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
   }
 
   #checkbox_id:checked ~ .menu > .menu__item {
