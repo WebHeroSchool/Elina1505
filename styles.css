@@ -135,12 +135,12 @@
 @media (max-width: 1367px) {
   .wrapper {
     width: 80vw;
-    margin: 0 0px 0 122px;
-    padding: 0px 0px 0px 88px;
+    margin: 0 0 0 122px;
+    padding: 0 0 0 88px;
   }
 
   .logo {
-    left: 0px;
+    left: 0;
     padding: 32px 274px 33px 44.7px;
     font: normal 21px/31.8px pt_serifbold, arial, helvetica, sans-serif;
   }
@@ -157,7 +157,7 @@
 
   .menu {
     font: normal 14px/17px roboto, arial, helvetica, sans-serif;
-    padding: 6px 23px 0px 0px;
+    padding: 6px 23px 0 0;
   }
 
   .menu__item {
@@ -193,18 +193,17 @@
     font: 14px/16.41px roboto, arial, helvetica, sans-serif;
     padding: 14px 17px;
   }
-
 }
 
 @media (max-width: 1025px) {
   .wrapper {
-    margin: 0 0 0 0px;
+    margin: 0 0 0 0;
     width: 95vw;
     padding: 0 0 0 37px;
   }
 
   .header {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .logo {
@@ -219,7 +218,7 @@
 
   .menu {
     font: normal 14px/17.41px roboto, arial, helvetica, sans-serif;
-    padding: 0 26px 1px 0px;
+    padding: 0 26px 1px 0;
   }
 
   .menu__item {
@@ -231,7 +230,7 @@
   }
 
   .main {
-    padding: 100px 50% 113px 0px;
+    padding: 100px 50% 113px 0;
     background: no-repeat top right url(img/frame1024.svg);
     background-position: 91.3% 61%;
     margin-left: 39px;
@@ -240,13 +239,12 @@
   .main__button {
     padding: 14px 15px;
   }
-  
 }
 
 @media (max-width: 768px) {
   .wrapper {
     background-position: center;
-    margin: 0px;
+    margin: 0;
     width: auto;
   }
 
@@ -273,13 +271,13 @@
   }
 
   .menu__burger {
-  position: relative;
-  width: 25px;
-  height: 17px;
-  cursor: pointer;
-  top:24px;
-  right: 16px;
-  z-index: 10;
+    position: relative;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+    top: 24px;
+    right: 16px;
+    z-index: 10;
   }
 
   .burger__line {
@@ -287,7 +285,7 @@
     display: block;
     width: 100%;
     height: 3px;
-    background: #0056EC;
+    background: #0056ec;
     top: 7px;
   }
 
@@ -298,7 +296,7 @@
     height: 3px;
     background: #0056EC;
     position: absolute;
-    transition: transform .4s;
+    transition: transform 0.4s;
   }
 
   .menu__burger::before {
@@ -320,22 +318,23 @@
     background: #fff;
     bottom: 32px;
     left: 6px;
+    padding: 0 0 0 0;
   }
 
-/* анимация бургера */
+  /* анимация бургера */
 
-/* скрываем линию посередине */
+  /* скрываем линию посередине */
   #checkbox_id:checked ~ label > .menu__burger > .burger__line {
     display: none;
   }
 
-/* поворачиваем верхнию линию */
+  /* поворачиваем верхнию линию */
   #checkbox_id:checked ~ label > .menu__burger::before {
     top: 7px;
     transform: rotate(45deg);
   }
 
-/* поворачиваем нижнию линию */
+  /* поворачиваем нижнию линию */
   #checkbox_id:checked ~ label > .menu__burger::after {
     top: 7px;
     transform: rotate(-45deg);
@@ -344,11 +343,11 @@
   .main {
     position: absolute;
     text-align: center;
-    padding: 258px 0px 0px;
+    padding: 258px 0 0;
     background-size: 77%;
     background-position: top center;
     z-index: 1;
-    margin: 0px 9px 0px 0px;
+    margin: 0 9px 0 0;
   }
 
   .main__title {
@@ -379,21 +378,16 @@
     text-decoration: none;
   }
 
-  #checkbox_id:checked ~ .menu {
-    padding: 0px 0px 0px 0px;
+  .menu__item:hover {
+    background-color: #cfd8dc;
   }
 
   #checkbox_id:checked ~ .menu > .menu__item {
-    padding: 0px 16px 0px 0;
+    padding: 0 16px 0 0;
     margin: 42px 0 0 0;
   }
 
   #checkbox_id:checked ~ .menu > .menu__item::after {
     display: none;
   }
-
-  .menu__item:hover {
-    background-color: #cfd8dc;
-  }
-
 }
