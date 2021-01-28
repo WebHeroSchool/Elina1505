@@ -208,7 +208,7 @@
 
   .logo {
     padding: 32px 412px 39px 44.7px;
-    left: 0px;
+    left: 0;
   }
 
   .logo__circle_color_blue {
@@ -294,7 +294,7 @@
     content: "";
     width: 100%;
     height: 3px;
-    background: #0056EC;
+    background: #0056ec;
     position: absolute;
     transition: transform 0.4s;
   }
@@ -343,11 +343,12 @@
   .main {
     position: absolute;
     text-align: center;
-    padding: 258px 0 0;
-    background-size: 77%;
+    padding: 258px 0px 0px;
+    background-size: 76%;
     background-position: top center;
     z-index: 1;
-    margin: 0 9px 0 0;
+    margin-left: 0;
+    width: 95vw;
   }
 
   .main__title {
