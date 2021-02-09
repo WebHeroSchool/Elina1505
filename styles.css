@@ -343,7 +343,7 @@
   .main {
     position: absolute;
     text-align: center;
-    padding: 258px 0px 0px;
+    padding: 258px 0 0;
     background-size: 76%;
     background-position: top center;
     z-index: 1;
