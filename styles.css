@@ -1,5 +1,5 @@
 .wrapper {
-  width: 80vw;
+  width: 90%;
   margin: 0 0 0 187px;
 }
 
@@ -25,7 +25,7 @@
 .logo {
   position: relative;
   left: 0;
-  padding: 31px 945px 34px 44.7px;
+  padding: 31px 766px 34px 44.7px;
   font: normal 24px/31.8px pt_serifbold, arial, helvetica, sans-serif;
 }
 
@@ -174,8 +174,8 @@
 
   .main {
     padding: 100px 50% 130px 210px;
-    background: no-repeat top right url(img/frame1366.svg);
-    background-position: 75% 54%;
+    background-position: 74.9% 53.9%;
+    background-size: 38.1%;
   }
 
   .main__title {
@@ -231,9 +231,9 @@
 
   .main {
     padding: 100px 50% 113px 0;
-    background: no-repeat top right url(img/frame1024.svg);
     background-position: 91.3% 61%;
     margin-left: 39px;
+    background-size: 53%;
   }
 
   .main__button {
