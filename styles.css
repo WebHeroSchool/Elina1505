@@ -1,4 +1,4 @@
-..wrapper {
+.wrapper {
   width: 90%;
   margin: 0 0 0 187px;
 }
@@ -344,10 +344,11 @@
     height: 100vh;
     position: absolute;
     background: #fff;
-    bottom: 32px;
-    left: 0;
-    top: 0;
+    bottom: 0;
+    left: 7px;
+    top: -37px;
     padding: 0;
+    margin: 0;
   }
 
   /* анимация бургера */
