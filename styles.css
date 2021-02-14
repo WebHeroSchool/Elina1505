@@ -139,7 +139,7 @@
   }
 
   .main {
-  background-size: 36%;
+    background-size: 36%;
   }
 
   .main__title {
@@ -213,9 +213,6 @@
 }
 
 @media (max-width: 1250px) {
-  .header {
-  }
-
   .main {
     background-position: 88.3% 47%;
   }
