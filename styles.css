@@ -1,6 +1,6 @@
 .wrapper {
-  width: 90%;
-  margin: 0 0 0 187px;
+  width: 100%;
+  margin: auto;
 }
 
 #checkbox_id {
@@ -133,15 +133,31 @@
   opacity: 0.5;
 }
 
-@media (max-width: 1367px) {
-  .wrapper {
-    width: 80vw;
-    margin: 0 0 0 122px;
-    padding: 0 0 0 88px;
+@media (max-width: 1785px) {
+  .header {
+    padding-left: 20px;
   }
 
+  .main {
+  background-size: 36%;
+  }
+
+  .main__title {
+    width: 114%;
+    font: bold 50px/67px pt_serifbold, arial, helvetica, serif;
+  }
+
+  .main__subtitle {
+    font: normal 17px/20.78px roboto, arial, helvetica, serif;
+  }
+
+  .main__button {
+    font: 14px/17px roboto, arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 1367px) {
   .logo {
-    left: 0;
     font: normal 21px/31.8px pt_serifbold, arial, helvetica, sans-serif;
   }
 
@@ -157,8 +173,7 @@
 
   .menu {
     font: normal 14px/17px roboto, arial, helvetica, sans-serif;
-    padding: 6px 23px 0 0;
-    margin-left: 25%;
+    margin-left: 26%;
   }
 
   .menu__item {
@@ -171,6 +186,7 @@
 
   .header {
     margin-bottom: 6px;
+    padding-left: 86px;
   }
 
   .main {
@@ -196,19 +212,35 @@
   }
 }
 
-@media (max-width: 1025px) and (min-width: 769px) {
-  .wrapper {
-    margin: 0 0 0 0;
-    width: 96vw;
-    padding: 0 0 0 37px;
+@media (max-width: 1250px) {
+  .header {
   }
 
+  .main {
+    background-position: 88.3% 47%;
+  }
+
+  .main__title {
+    font: bold 42px/61.25px pt_serifbold, arial, helvetica, serif;
+  }
+
+  .main__subtitle {
+    font: normal 14px/17.09px roboto, arial, helvetica, serif;
+  }
+
+  .main__button {
+    font: 13px/15.41px roboto, arial, helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 1025px) {
   .header {
     margin-bottom: 0;
+    padding-left: 37px;
   }
 
   .logo {
-    padding: 32px 0 39px 44.7px;
+    padding: 32px 16px 39px 44.7px;
     left: 0;
   }
 
@@ -234,46 +266,60 @@
   .main {
     padding: 100px 50% 113px 0;
     background-position: 91.3% 61%;
-    margin-left: 39px;
+    margin-left: 37px;
     background-size: 53%;
   }
 
+  .main__title {
+    width: 90%;
+    font: bold 50px/66.25px pt_serifbold, arial, helvetica, serif;
+  }
+
+  .main__subtitle {
+    font: normal 18px/21.09px roboto, arial, helvetica, serif;
+  }
+
   .main__button {
-    padding: 14px 15px;
+    font: 14px/16.41px roboto, arial, helvetica, sans-serif;
   }
 }
 
-@media (max-width: 768px) and (min-width: 471px) {
-  .wrapper {
-    background-position: center;
-    margin: 0;
-    width: auto;
-  }
-
+@media (max-width: 980px) {
   .menu {
-    margin-left: 12%;
+    margin-left: 20%;
   }
 
   .main {
-    padding: 100px 50% 113px 0;
-    background-position: 91.3% 61%;
-    margin-left: 39px;
-    background-size: 53%;
+    background-position: 91.3% 40%;
+    background-size: 48%;
+  }
+
+  .main__title {
+    margin: 0 0 32px 0;
+    width: 100%;
+    font: bold 39px/53.25px pt_serifbold, arial, helvetica, serif;
+  }
+
+  .main__subtitle {
+    margin: 0 0 33px 0;
+    font: normal 15px/19.09px roboto, arial, helvetica, serif;
+    width: 70%;
   }
 
   .main__button {
-    padding: 14px 15px;
+    font: 12px/12.41px roboto, arial, helvetica, sans-serif;
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 768px) {
   .wrapper {
-    width: 75%;
+    background-position: center;
     margin: 0;
+    width: 100%;
   }
 
   .header {
-    margin-left: -53px;
+    padding-bottom: 6px;
   }
 
   .logo {
@@ -344,9 +390,8 @@
     height: 100vh;
     position: absolute;
     background: #fff;
-    bottom: 0;
+    bottom: 30px;
     left: 7px;
-    top: -37px;
     padding: 0;
     margin: 0;
   }
@@ -373,25 +418,28 @@
   .main {
     position: absolute;
     text-align: center;
-    padding: 258px 0 0;
-    background-size: 76%;
+    padding: 44% 0 0 0;
+    background-size: 78%;
     background-position: top center;
     z-index: 1;
-    margin-left: 0;
-    width: 95vw;
+    width: 95%;
+    margin-left: 1%;
+    margin-top: 0;
   }
 
   .main__title {
-    margin-bottom: 34px;
-    margin-left: 7px;
+    margin-bottom: 9%;
+    margin-top: 26%;
+    margin-left: 0;
     font: 30px/39px pt_serifbold, arial, helvetica, serif;
+    width: 100%;
   }
 
   .main__subtitle {
-    margin-bottom: 24px;
+    margin-bottom: 7%;
     font: 16px/19px roboto, arial, helvetica, sans-serif;
-    width: 70%;
-    margin-left: 57px;
+    width: 71%;
+    margin-left: 15%;
   }
 
   .main__button {
