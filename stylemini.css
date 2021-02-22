@@ -1,0 +1,89 @@
+@keyframes move{0%{opacity:25%}50%{opacity:100%}100%{opacity:25%}}
+.wrapper{width:100%;margin:auto}
+#checkbox_id{display:none}
+.logo,.menu{display:inline-block}
+.header{display:flex;justify-content:space-between;margin-bottom:128px}
+.text{font:normal 24px/31.8px pt_serifbold,arial,helvetica,sans-serif}
+.logo{position:relative;left:9.8%;padding:31px 0 34px 44.7px;font:normal 24px/31.8px pt_serifbold,arial,helvetica,sans-serif}
+.logo__circle{position:absolute;left:0;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;opacity:.7}
+.logo__circle_color_blue{position:absolute;left:9px;top:56%;background:#c8dbfb}
+.logo__circle_color_dark-blue{background:#0056ec;top:46px;left:1px}
+.menu{display:flex;align-items:center;font:normal 18px/22.09px roboto,arial,helvetica,sans-serif;padding-top:3px;margin-left:50%}
+.menu__item{text-decoration:none;position:relative;transition:opacity .5s;color:#000;margin-right:27px}
+.menu__item:last-child{margin-right:0}
+.menu__item:hover::after{position:absolute;left:0;display:block;content:"";width:100%;height:3px;background:#0056ec}
+.menu__item_active::after{position:absolute;display:block;content:"";width:100%;height:3px;background:#0056ec}
+.menu__item:hover{opacity:.5;transition:opacity .5s}
+.main{padding:84px 60vw 270px 187px;background:no-repeat top right url(img/mainimg.svg);background-position:83.3% 8%}
+.main__title{margin:0 0 37px 0;font:bold 66px/87px pt_serifbold,arial,helvetica,serif}
+.main__subtitle{margin:0 0 46px 0;font:normal 22px/25.78px roboto,arial,helvetica,serif;width:25vw}
+.main__title-text_hihglight{background:#ecf3ff}
+.main__button{display:inline-block;font:18px/21px roboto,arial,helvetica,sans-serif;color:#fff;background:#0056ec;padding:14px 22px;text-decoration:none;border-radius:4px;transition:opacity .5s;animation-name:move;animation-duration:2.5s;animation-timing-function:ease-out;animation-iteration-count:infinite}
+.main__button:hover{opacity:.5}
+@media (max-width:1785px){
+  .header{padding-left:20px}
+  .main{background-size:36%}
+  .main__title{width:114%;font:bold 50px/67px pt_serifbold,arial,helvetica,serif}
+  .main__subtitle{font:normal 17px/20.78px roboto,arial,helvetica,serif}
+  .main__button{font:14px/17px roboto,arial,helvetica,sans-serif}}
+@media (max-width:1367px){
+  .logo{font:normal 21px/31.8px pt_serifbold,arial,helvetica,sans-serif}
+  .logo__circle_color_dark-blue{top:46px;left:1px}
+  .logo__circle_color_blue{left:9px;top:55%}
+  .menu{font:normal 14px/17px roboto,arial,helvetica,sans-serif;margin-left:26%}
+  .menu__item{margin-right:26px}
+  .menu__item_active::after{height:2px}
+  .header{margin-bottom:6px;padding-left:86px}
+  .main{padding:100px 50% 130px 210px;background-position:74.9% 53.9%;background-size:38.1%}
+  .main__title{margin:0 0 38px 0;font:bold 50px/66.25px pt_serifbold,arial,helvetica,serif}
+  .main__subtitle{margin:0 0 42px 0;font:normal 18px/21.09px roboto,arial,helvetica,serif;width:78%}
+  .main__button{font:14px/16.41px roboto,arial,helvetica,sans-serif;padding:14px 17px}}
+@media (max-width:1250px){
+  .main{background-position:88.3% 47%}
+  .main__title{font:bold 42px/61.25px pt_serifbold,arial,helvetica,serif}
+  .main__subtitle{font:normal 14px/17.09px roboto,arial,helvetica,serif}
+  .main__button{font:13px/15.41px roboto,arial,helvetica,sans-serif}}
+@media (max-width:1025px){
+  .header{margin-bottom:0;padding-left:37px}
+  .logo{padding:32px 16px 39px 44.7px;left:0}
+  .logo__circle_color_blue{top:51%;left:9px}
+  .menu{font:normal 14px/17.41px roboto,arial,helvetica,sans-serif;padding:0 26px 1px 0;margin-left:41%}
+  .menu__item{margin-right:26px}
+  .menu__item_active::after{height:2px}
+  .main{padding:100px 50% 113px 0;background-position:91.3% 61%;margin-left:37px;background-size:53%}
+  .main__title{width:90%;font:bold 50px/66.25px pt_serifbold,arial,helvetica,serif}
+  .main__subtitle{font:normal 18px/21.09px roboto,arial,helvetica,serif}
+  .main__button{font:14px/16.41px roboto,arial,helvetica,sans-serif}}
+@media (max-width:980px){
+  .menu{margin-left:20%}
+  .main{background-position:91.3% 40%;background-size:48%}
+  .main__title{margin:0 0 32px 0;width:100%;font:bold 39px/53.25px pt_serifbold,arial,helvetica,serif}
+  .main__subtitle{margin:0 0 33px 0;font:normal 15px/19.09px roboto,arial,helvetica,serif;width:70%}
+  .main__button{font:12px/12.41px roboto,arial,helvetica,sans-serif}}
+@media (max-width:768px){
+  .wrapper{background-position:center;margin:0;width:100%}
+  .header{padding-bottom:6px}
+  .logo{padding:22px 0}
+  .text{visibility:hidden}
+  .logo__circle_color_dark-blue{top:30px;left:-20px}
+  .logo__circle_color_blue{left:-12px;top:49%}
+  .menu{display:none}
+  .menu__burger{position:relative;width:25px;height:17px;cursor:pointer;top:24px;right:16px;z-index:10}
+  .burger__line{position:absolute;display:block;width:100%;height:3px;background:#0056ec;top:7px}
+  .menu__burger::after,
+  .menu__burger::before{content:"";width:100%;height:3px;background:#0056ec;position:absolute;transition:transform .4s}
+  .menu__burger::before{top:0}
+  .menu__burger::after{bottom:0}
+  #checkbox_id:checked~.menu{display:flex;justify-content:center;flex-direction:column;z-index:2;width:100vw;height:100vh;position:absolute;background:#fff;bottom:30px;left:7px;padding:0;margin:0}
+  #checkbox_id:checked~label>.menu__burger>.burger__line{display:none}
+  #checkbox_id:checked~label>.menu__burger::before{top:7px;transform:rotate(45deg)}
+  #checkbox_id:checked~label>.menu__burger::after{top:7px;transform:rotate(-45deg)}
+  .main{position:absolute;text-align:center;padding:44% 0 0 0;background-size:78%;background-position:top center;z-index:1;width:95%;margin-left:1%;margin-top:0}
+  .main__title{margin-bottom:9%;margin-top:26%;margin-left:0;font:30px/39px pt_serifbold,arial,helvetica,serif;width:100%}
+  .main__subtitle{margin-bottom:7%;font:16px/19px roboto,arial,helvetica,sans-serif;width:71%;margin-left:15%}
+  .main__button{font:14px/16px roboto,arial,helvetica,sans-serif;padding-left:8px}
+  .menu__item{display:block;padding:17px 24px;color:#333;font-family:roboto,arial,helvetica,sans-serif;font-size:30px;font-weight:500;text-decoration:none}
+  .menu__item:hover{background-color:#cfd8dc}
+  #checkbox_id:checked~.menu>.menu__item{padding:0 16px 0 0;margin:42px 0 0 0}
+  #checkbox_id:checked~.menu>.menu__item::after{display:none}}
+
